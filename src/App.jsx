@@ -1,7 +1,14 @@
+import { Hero, Aboutme, Myservices, Projects, Reviews, Footer } from "./sections"
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <main>
+      <section><Hero /> </section>
+      <section><Aboutme /> </section>
+      <section><Myservices /> </section>
+      <section><Projects /> </section>
+      <section><Reviews /> </section>
+      <section><Footer /> </section>
+    </main>
   )
 }
