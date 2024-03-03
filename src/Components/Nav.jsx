@@ -4,7 +4,7 @@ import { hamburger } from '../assets/icons'
 const Nav = () => {
   return (
     // spacing by padding , position  , z index , full width
-    <header className='padding-x py-8 absolute w-full z-10  '>
+    <header className='padding-x py-4 absolute w-full z-10  '>
       {/* flex to position nxt to each other horizontal ,space between ,max width 1440 */}
       <nav className='flex justify-between items-center max-container'>
         <a href="">
