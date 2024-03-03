@@ -1,6 +1,7 @@
 import Button from "../Components/Button"
 import { contact, download, github, instagram, linkedin, video } from "../assets/icons"
 import { hero } from "../assets/images"
+import { socialIcons } from "../constants"
 
 const Hero = () => {
   return (
@@ -17,10 +18,12 @@ const Hero = () => {
           <Button label='Download CV' buttonIcon={download} />
         </div>
         <div className="flex mt-8 gap-4 px-4">
-          <img src={video} width={25} height={25} alt="video icon" />
-          <img src={linkedin} width={25} height={25} alt="linkedin icon" />
-          <img src={github} width={25} height={25} alt="github icon" />
-          <img src={instagram} width={25} height={25} alt="instagram icon" />
+          {
+            socialIcons.map((item) => (
+              <img key={item.altname} src={item.socialicon} width={25} height={25} alt="video icon" />
+            ))
+          }
+
 
         </div>
 
