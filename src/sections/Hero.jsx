@@ -1,5 +1,5 @@
 import Button from "../Components/Button"
-import { contact, download } from "../assets/icons"
+import { contact, download, github, instagram, linkedin, video } from "../assets/icons"
 import { hero } from "../assets/images"
 
 const Hero = () => {
@@ -8,13 +8,20 @@ const Hero = () => {
     <section className="w-full flex  flex-col xl:flex-row justify-center items-center gap-10 max-continer min-h-screen pt-28">
       <div className="relative flex flex-col xl:w-2/5 justify-center items-start w-full max-xl:padding-x ">
         <p className="text-xl font-montserrat text-coral-red">WEB DEVELOPER</p>
-        <h1 className="mt-10 font-palanquin text-8xl text-blue-950 max-sm:text-[72px] max-sm:leading-[82px] font-bold">
+        <h1 className="mt-10 font-palanquin text-8xl text-blue-950 max-sm:text-[62px] max-sm:leading-[72px] font-bold">
           <span className="no-wrap">Hello, my name</span>  is <span className="text-coral-red inline-block ">Eric</span>
         </h1>
-        <p className="text-lg leading-8 mt-6 mb-10 sm:max-w-sm font-montserrat"> I'm a Fullstack software developer  </p>
+        <p className="text-lg leading-8 mt-6 mb-7 sm:max-w-sm font-montserrat"> I'm a Fullstack software developer  </p>
         <div className="flex">
           <Button label='Contact Me' buttonIcon={contact} />
           <Button label='Download CV' buttonIcon={download} />
+        </div>
+        <div className="flex mt-8 gap-4 px-4">
+          <img src={video} width={25} height={25} alt="video icon" />
+          <img src={linkedin} width={25} height={25} alt="linkedin icon" />
+          <img src={github} width={25} height={25} alt="github icon" />
+          <img src={instagram} width={25} height={25} alt="instagram icon" />
+
         </div>
 
       </div>
