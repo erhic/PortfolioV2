@@ -1,24 +1,41 @@
+import { useState } from "react"
 import Button from "../Components/Button"
+import Personalinfo from "../Components/Personalinfo"
+import Qualification from "../Components/Qualification"
+import Skills from "../Components/Skills"
+import { hero } from "../assets/images"
+import { aboutMe } from "../constants"
 
 const Aboutme = () => {
-  return (
-    <section>
-      <h2>About Me</h2>
-      <div>
-        <div>
-          <img src="" alt="" />
+  const [itemLabel, setItemLabel] = useState('Personal Info')
+  return (<> <h2 className="flex pb-8 justify-center font-bold text-2xl font-montserrat text-slate-gray">About Me</h2>
+    <section className="w-full flex flex-col xl:flex-row justify-center items-center">
+
+      <div className="flex justify-between items-center w-full max-container">
+        <div className="block max-lg:hidden">
+          <img src={hero} alt="Hero image 2" width={610} height={500} className="object-contain relative z-10" />
         </div>
-        <div>
-          <Button />
-          <h2></h2>
-          <p>I specialize  in crafting intuative websites with cutting edge of technology , delivery dynamic and engaging user experience</p>
-          <div className="flex flex-col">
-            <div></div>
-            <div></div>
+        <div className="xl:w-3/5 ">
+          <div className="flex flex-row rounded-full  justify-center  gap-2">
+            {
+              aboutMe.map((item) => (
+                <a key={item.label} onClick={() => { setItemLabel(item.label) }} >
+                  <Button label={item.label} buttonIcon='' />
+                </a>
+              ))
+            }
           </div>
+
+          {
+            itemLabel === "Personal Info" ? <Personalinfo /> : itemLabel === "Qualifications" ? <Qualification /> : itemLabel === "Skills" ? <Skills /> : ''
+          }
+
+
+
         </div>
       </div>
-    </section>
+    </section >
+  </>
   )
 }
 

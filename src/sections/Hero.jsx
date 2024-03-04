@@ -1,7 +1,7 @@
 import Button from "../Components/Button"
-import { contact, download, github, instagram, linkedin, video } from "../assets/icons"
+import { contact, download } from "../assets/icons"
 import { hero } from "../assets/images"
-import { socialIcons } from "../constants"
+import { heroButtons, socialIcons } from "../constants"
 
 const Hero = () => {
   return (
@@ -14,8 +14,16 @@ const Hero = () => {
         </h1>
         <p className="text-lg leading-8 mt-6 mb-7 sm:max-w-sm font-montserrat"> I'm a Fullstack software developer  </p>
         <div className="flex">
-          <Button label='Contact Me' buttonIcon={contact} />
-          <Button label='Download CV' buttonIcon={download} />
+          {
+            heroButtons.map((item) => (
+              <aside key={item.label}>
+                <Button label={item.label} buttonIcon={item.btnIcon} />
+              </aside>
+            ))
+
+
+          }
+
         </div>
         <div className="flex mt-8 gap-4 px-4">
           {
@@ -23,8 +31,6 @@ const Hero = () => {
               <img key={item.altname} src={item.socialicon} width={25} height={25} alt="video icon" />
             ))
           }
-
-
         </div>
 
       </div>
