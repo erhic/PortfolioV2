@@ -11,8 +11,8 @@ const Aboutme = () => {
   return (<> <h2 className="flex pb-8 justify-center font-bold text-2xl font-montserrat text-slate-gray">About Me</h2>
     <section className="w-full flex flex-col xl:flex-row justify-center items-center">
 
-      <div className="flex justify-between items-center w-full max-container">
-        <div className="block max-lg:hidden">
+      <div className="flex justify-between items-start w-full max-container">
+        <div className=" py-10 block max-lg:hidden">
           <img src={hero} alt="Hero image 2" width={610} height={500} className="object-contain relative z-10" />
         </div>
         <div className="xl:w-3/5 ">
