@@ -1,8 +1,11 @@
 import {
+  app,
   avatar,
   briefcase,
   caledar,
   contact,
+  design,
+  develop,
   download,
   email,
   figma,
@@ -69,15 +72,36 @@ export const qualifications = [
 export const skills = [
   { skill: "HTML,CSS", stack: "Frontend" },
   { skill: "Javascript", stack: "Frontend" },
-  { skill: "React ,Angular ,React Native", stack: "Frontend framework" },
-  { skill: "Node Js ,Python ,PHP", stack: "Backend" },
+  { skill: "React ,Angular , React Native", stack: "Frontend framework" },
+  { skill: "Node Js , Python , PHP", stack: "Backend" },
   { skill: "Django", stack: "Backend framework" },
-  { skill: "SQL ,NoSQL", stack: "Database language" },
-  { skill: "MySQL ,MongoDB", stack: "Database " },
+  { skill: "SQL , NoSQL", stack: "Database language" },
+  { skill: "MySQL , MongoDB", stack: "Database " },
 ];
 
 export const tools = [
   { tool: vscode, altname: "Vscode" },
   { tool: figma, altname: "Figma" },
   { tool: notion, altname: "Notion" },
+];
+
+export const services = [
+  {
+    icon: design,
+    title: "Web Design",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+  },
+  {
+    icon: develop,
+    title: "Web Development",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+  },
+  {
+    icon: app,
+    title: "App Development",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+  },
 ];
