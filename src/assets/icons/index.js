@@ -21,11 +21,14 @@ import graduate from "./graduate.svg";
 import notion from "./notion.svg";
 import phoneno from "./phoneno.svg";
 import vscode from "./vscode.svg";
+import livesite from "./livesite.svg";
+import background from "./background.svg";
 
 export {
   app,
   arrowRight,
   avatar,
+  background,
   briefcase,
   caledar,
   design,
@@ -46,4 +49,5 @@ export {
   notion,
   phoneno,
   vscode,
+  livesite,
 };

@@ -105,3 +105,24 @@ export const services = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
   },
 ];
+
+export const reviews = [
+  {
+    person: "Bridget",
+    work: "Developer",
+    comment:
+      "onsectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+  },
+  {
+    person: "Chrispus",
+    work: "Fullstack Developer",
+    comment:
+      "onsectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+  },
+  {
+    person: "Ken",
+    work: "ICT Officer",
+    comment:
+      "onsectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+  },
+];
