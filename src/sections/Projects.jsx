@@ -14,7 +14,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="flex justify-center gap-10 flex-row max-md:flex-col max-lg:flex-row max-lg:pt-16 max-md:pl-16">
+        <div className="flex justify-center gap-10 flex-row max-md:flex-col max-lg:flex-row max-lg:pt-16 max-md:pl-14">
 
           {project.map((item) => (
             <div key={item.projectName} className="max-w-[230px] min-w-[230px] border  overflow-hidden border-red-200 hover:red-300 hover:border-2 rounded-lg ">
