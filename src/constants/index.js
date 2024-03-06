@@ -18,6 +18,7 @@ import {
   video,
   vscode,
 } from "../assets/icons";
+import { stockapp, mbankapp } from "../assets/images";
 
 export const navLinks = [
   { href: "#home", label: "Home" },
@@ -103,6 +104,21 @@ export const services = [
     title: "App Development",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+  },
+];
+
+export const project = [
+  {
+    language: "Angular",
+    image: stockapp,
+    projectName: "Stock Management",
+    description: "sit amet, consectetur adipisicing ma porro ad",
+  },
+  {
+    language: "React Native",
+    image: mbankapp,
+    projectName: "Mbank App",
+    description: "sit amet, consectetur a maiores i porro ad",
   },
 ];
 

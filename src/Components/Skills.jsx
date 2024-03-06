@@ -8,7 +8,7 @@ const Skills = () => {
       {
         skills.map((item) => (
           <div key={item.skill}>
-            <p className="leading-8 ">  <span className="font-semibold  text-slate-gray px-4 ">{item.skill}</span> - <span className="text-slate-gray">{item.stack}</span></p>
+            <p className="leading-8 ">  <span className="font-semibold  text-slate-gray px-4 ">{item.skill}</span>  <span className="text-slate-gray max-lg:hidden">- {item.stack}</span></p>
           </div>
         ))
       }
