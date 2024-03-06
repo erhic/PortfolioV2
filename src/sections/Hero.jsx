@@ -12,7 +12,7 @@ const Hero = () => {
           <span className="no-wrap">Hello, my name</span>  is <span className="text-coral-red inline-block ">Eric</span>
         </h1>
         <p className="text-lg leading-8 mt-6 mb-7 sm:max-w-sm font-montserrat text-slate-gray"> I'm a Fullstack software developer  </p>
-        <div className=" flex flex-row max-lg:flex-col max-lg:w-60">
+        <div className=" flex flex-row max-lg:flex-col max-lg:w-60 max-lg:hidden">
           {
             heroButtons.map((item) => (
               <aside key={item.label}>
@@ -24,7 +24,7 @@ const Hero = () => {
           }
 
         </div>
-        <div className=" flex mt-8 gap-4 px-4">
+        <div className=" flex mt-8 gap-4 px-4 max-lg:hidden">
           {
             socialIcons.map((item) => (
               <img key={item.altname} src={item.socialicon} width={25} height={25} alt="video icon" />
