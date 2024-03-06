@@ -9,8 +9,8 @@ export default function App() {
       <section className="xl:padding-l wide:padding-r padding-b"><Hero /> </section>
       <section className="padding"><Aboutme /> </section>
       <section className="padding-x py-10"><Myservices /> </section>
-      <section className="padding"><Projects /> </section>
-      <section className="padding bg-pale-blue"><Reviews /> </section>
+      {/* <section className="padding"><Projects /> </section> */}
+      {/* <section className="padding bg-pale-blue"><Reviews /> </section> */}
       <section className="padding-x sm:py-32 py-16 w-full"><Contact /></section>
       <section className=""><Footer /> </section>
     </main>

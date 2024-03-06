@@ -6,10 +6,10 @@ const Reviews = () => {
     <>
       <h2 className="flex justify-center font-montserrat text-2xl font-bold text-slate-gray leading-8 pb-16">Reviews</h2>
 
-      <div className="flex justify-center xl:flex-row sm:flex-col gap-5">
+      <div className="flex justify-center flex-row gap-5">
         {
           reviews.map((item) => (
-            <div key={item.comment} className="border border-red-200 rounded-lg max-w-[400px]">
+            <div key={item.person} className="border border-red-200 rounded-lg max-w-[400px]">
               <div className="flex flex-row justify-center gap-4 items-center pt-6">
                 <img src={hero} width={90} alt="Profile Image" className="overflow-hidden rounded-full" />
                 <div>
