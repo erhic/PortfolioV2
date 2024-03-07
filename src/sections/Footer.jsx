@@ -8,7 +8,9 @@ const Footer = () => {
         <div className=" flex flex-row justify-center pb-4 gap-3">
           {
             socialIcons.map((item) => (
-              <img key={item.altname} src={item.socialicon} width={25} height={25} alt="video icon" />
+              <a key={item.altname} href={item.link} target="blank">
+                <img src={item.socialicon} width={25} height={25} alt="video icon" />
+              </a>
             ))
           }
         </div>

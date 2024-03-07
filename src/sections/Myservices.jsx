@@ -4,10 +4,10 @@ const Myservices = () => {
   return (<>
     <h2 className="flex justify-center pb-12 font-montserrat leading-8 text-2xl font-bold text-slate-gray">My Services</h2>
 
-    <div className="flex flex-row max-lg:flex-col w-full max-container gap-8 px-5">
+    <div className="flex flex-row max-lg:flex-col w-full max-container gap-8 px-5 ">
       {
         services.map((item) => (
-          <div key={item.icon} className="border hover:border-coral-red rounded-lg">
+          <div key={item.icon} className="border min-w-[265px] hover:border-coral-red rounded-lg">
 
             <div className="flex justify-center items-center pt-3">
               <img src={item.icon} alt="" />

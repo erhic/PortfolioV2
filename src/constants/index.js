@@ -33,10 +33,18 @@ export const aboutMe = [
 ];
 
 export const socialIcons = [
-  { socialicon: video, altname: "Video icon" },
-  { socialicon: linkedin, altname: "Linkedin icon" },
-  { socialicon: github, altname: "Github icon" },
-  { socialicon: instagram, altname: "Instagram icon" },
+  { socialicon: video, altname: "Video icon", link: "" },
+  {
+    socialicon: linkedin,
+    altname: "Linkedin icon",
+    link: "https://www.linkedin.com/in/ericngugi/",
+  },
+  {
+    socialicon: github,
+    altname: "Github icon",
+    link: "https://github.com/erhic",
+  },
+  { socialicon: instagram, altname: "Instagram icon", link: "" },
 ];
 
 export const heroButtons = [
@@ -90,20 +98,17 @@ export const services = [
   {
     icon: design,
     title: "Web Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+    description: "Crafting stunning websites to showcase your  brand.",
   },
   {
     icon: develop,
     title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+    description: "Creating websites to elevate  online presence.",
   },
   {
     icon: app,
     title: "App Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+    description: "Developing innovative apps to elevate user experiences  .",
   },
 ];
 
@@ -112,13 +117,13 @@ export const project = [
     language: "Angular",
     image: stockapp,
     projectName: "Stock Management",
-    description: "sit amet, consectetur adipisicing ma porro ad",
+    description: "Web app to manage inventory operation",
   },
   {
     language: "React Native",
     image: mbankapp,
     projectName: "Mbank App",
-    description: "sit amet, consectetur a maiores i porro ad",
+    description: "Mobile app to perform banking transactions",
   },
 ];
 
@@ -126,19 +131,16 @@ export const reviews = [
   {
     person: "Bridget",
     work: "Developer",
-    comment:
-      "onsectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+    comment: "A team member who contibutes and is ready to get feedback .",
   },
   {
     person: "Chrispus",
     work: "Fullstack Developer",
-    comment:
-      "onsectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+    comment: "Creative in designing appealing User Interface with figma .",
   },
   {
     person: "Ken",
     work: "ICT Officer",
-    comment:
-      "onsectetur adipisicing elit. Aliquam explicabo soluta maiores iure autem porro adip",
+    comment: " Willing to listen, learn things and collaborate with others . ",
   },
 ];
