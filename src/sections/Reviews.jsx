@@ -1,4 +1,4 @@
-import { hero } from "../assets/images"
+
 import { reviews } from "../constants"
 
 const Reviews = () => {
