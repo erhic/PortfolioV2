@@ -131,7 +131,7 @@ export const reviews = [
   {
     person: "Bridget",
     work: "Developer",
-    comment: "A team member who contibutes and is ready to get feedback .",
+    comment: "A team member who contributes and is ready to get feedback .",
   },
   {
     person: "Chrispus",
