@@ -125,8 +125,39 @@ export const project = [
     projectName: "Mbank App",
     description: "Mobile app to perform banking transactions",
   },
+  {
+    language: "Angular",
+    image: stockapp,
+    projectName: "Stock Management",
+    description: "Web app to manage inventory operation",
+  },
+  {
+    language: "React Native",
+    image: mbankapp,
+    projectName: "Mbank App",
+    description: "Mobile app to perform banking transactions",
+  },
+  {
+    language: "Angular",
+    image: stockapp,
+    projectName: "Stock Management",
+    description: "Web app to manage inventory operation",
+  },
+  {
+    language: "React Native",
+    image: mbankapp,
+    projectName: "Mbank App",
+    description: "Mobile app to perform banking transactions",
+  },
 ];
 
+export const devStack = [
+  { stacks: "React" },
+  { stacks: "Angular" },
+  { stacks: "Node" },
+  { stacks: "Python" },
+  { stacks: "PHP" },
+];
 export const reviews = [
   {
     person: "Bridget",
