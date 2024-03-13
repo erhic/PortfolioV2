@@ -18,12 +18,19 @@ import {
   video,
   vscode,
 } from "../assets/icons";
-import { stockapp, mbankapp } from "../assets/images";
+import {
+  stockapp,
+  mbankapp,
+  jobwebsite,
+  toataka,
+  pizzawebsite,
+  neighbourhood,
+} from "../assets/images";
 
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#myprojects", label: "My Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/allprojects", label: "My Projects" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export const aboutMe = [
@@ -33,7 +40,7 @@ export const aboutMe = [
 ];
 
 export const socialIcons = [
-  { socialicon: video, altname: "Video icon", link: "" },
+  // { socialicon: video, altname: "Video icon", link: "" },
   {
     socialicon: linkedin,
     altname: "Linkedin icon",
@@ -44,7 +51,7 @@ export const socialIcons = [
     altname: "Github icon",
     link: "https://github.com/erhic",
   },
-  { socialicon: instagram, altname: "Instagram icon", link: "" },
+  // { socialicon: instagram, altname: "Instagram icon", link: "" },
 ];
 
 export const heroButtons = [
@@ -126,28 +133,28 @@ export const project = [
     description: "Mobile app to perform banking transactions",
   },
   {
-    language: "Angular",
-    image: stockapp,
-    projectName: "Stock Management",
-    description: "Web app to manage inventory operation",
+    language: "React",
+    image: jobwebsite,
+    projectName: "Gigs Web app",
+    description: "Web app to manage job applications and applicant ",
   },
   {
-    language: "React Native",
-    image: mbankapp,
-    projectName: "Mbank App",
-    description: "Mobile app to perform banking transactions",
+    language: "React",
+    image: toataka,
+    projectName: "Toataka",
+    description: "Web app for waste management and services",
   },
   {
-    language: "Angular",
-    image: stockapp,
-    projectName: "Stock Management",
-    description: "Web app to manage inventory operation",
+    language: "Vanilla JS",
+    image: pizzawebsite,
+    projectName: "Pizzadepiz",
+    description: "Web app for ordering different pizza variety",
   },
   {
-    language: "React Native",
-    image: mbankapp,
-    projectName: "Mbank App",
-    description: "Mobile app to perform banking transactions",
+    language: "Python",
+    image: neighbourhood,
+    projectName: "Neighbourhood",
+    description: "Web app for linking business and contact managements",
   },
 ];
 

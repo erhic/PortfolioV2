@@ -24,7 +24,7 @@ const Hero = () => {
           }
 
         </div>
-        <div className=" flex mt-8 gap-4 px-4 max-lg:hidden">
+        <div className="  flex mt-8 gap-4 px-4 max-lg:hidden">
           {
             socialIcons.map((item) => (
               <img key={item.altname} src={item.socialicon} width={25} height={25} alt="video icon" />

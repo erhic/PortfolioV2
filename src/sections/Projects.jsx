@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Button from "../Components/Button"
 import { livesite } from "../assets/icons"
 import { project } from "../constants"
@@ -10,13 +11,14 @@ const Projects = () => {
         <div className="px-7">
           <h2 className="font-montserrat leading-8  text-lg  font-bold flex justify-start gap-5"> <span className="px-3 rounded-full bg-coral-red text-[1px] "></span>Latest Project</h2>
           <p className="leading-8 font-palanquin text-lg text-slate-gray py-4 w-80">Explore my recent projects in web design and development. </p>
-          <div className="absolute "><Button label="All Project" buttonIcon='' />
-          </div>
+          <Link to={`/allprojects`} >
+            <div className="absolute "><Button label="All Project" buttonIcon='' />
+            </div></Link>
         </div>
 
         <div className="flex justify-center gap-10 flex-row max-md:flex-col max-lg:flex-row max-lg:pt-16 max-md:pl-14">
 
-          {project.map((item) => (
+          {project.filter((itm, index) => index < 2).map((item) => (
             <div key={item.projectName} className="max-w-[230px] min-w-[230px] border  overflow-hidden border-red-200 hover:red-300 hover:border-2 rounded-lg ">
               <div className="px-7 pt-17 pb-5 min-h-[210px] max-h-[210px] bg-[url('assets/images/background.jpg')]">
                 <p className="py-1 px-4 my-3 text-white rounded-full text-base bg-coral-red inline-block"> {item.language}</p>
