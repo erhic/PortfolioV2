@@ -16,7 +16,9 @@ const Hero = () => {
           {
             heroButtons.map((item) => (
               <aside key={item.label}>
-                <Button label={item.label} buttonIcon={item.btnIcon} />
+                <a href={item.link}>
+                  <Button label={item.label} buttonIcon={item.btnIcon} />
+                </a>
               </aside>
             ))
 
@@ -27,7 +29,9 @@ const Hero = () => {
         <div className="  flex mt-8 gap-4 px-4 max-lg:hidden">
           {
             socialIcons.map((item) => (
-              <img key={item.altname} src={item.socialicon} width={25} height={25} alt="video icon" />
+              <a key={item.altname} href={item.link} target="blank">
+                <img key={item.altname} src={item.socialicon} width={25} height={25} alt="video icon" />
+              </a>
             ))
           }
         </div>
