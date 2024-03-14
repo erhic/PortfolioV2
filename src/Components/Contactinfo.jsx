@@ -32,7 +32,7 @@ const Contactinfo = ({ view }) => {
             </div>
 
           </div>
-          <div className="flex flex-col gap-10 border-l pl-4">
+          <div className="flex flex-col gap-10 max-lg:border-none border-l pl-4 max-lg:p-0">
             <div className="flex ">
               <label htmlFor="">Name </label>
               <input type="text" placeholder="" className="border-b hover:border-blue-900 outline-none mx-2" />
