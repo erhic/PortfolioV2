@@ -1,4 +1,4 @@
-import AllProjects from "../Components/AllProjects"
+
 import Aboutme from "./Aboutme"
 import Contact from "./Contact"
 import Hero from "./Hero"
@@ -6,7 +6,10 @@ import Myservices from "./Myservices"
 import Projects from "./Projects"
 import Reviews from "./Reviews"
 
+
 const Home = () => {
+
+
   return (
     <>
       <section className="xl:padding-l px-16 wide:padding-r padding-b"><Hero /> </section>

@@ -55,8 +55,8 @@ export const socialIcons = [
 ];
 
 export const heroButtons = [
-  { label: "Contact Me", btnIcon: contact },
-  { label: "Download CV", btnIcon: download },
+  { label: "Contact Me", btnIcon: contact, link: "/contact" },
+  { label: "Download CV", btnIcon: download, link: "" },
 ];
 
 export const personalInfo = [
